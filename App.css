@@ -1,0 +1,110 @@
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.App {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.App-header h1 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.task-input {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.task-input button {
+  padding: 0.5rem 1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+.task-input button:hover {
+  background-color: #218838;
+}
+
+.filters button {
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  border: none;
+  cursor: pointer;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.filters .active {
+  background-color: #007bff;
+  color: white;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.task-list li.completed {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+.task-list input[type="text"] {
+  flex: 1;
+  margin: 0 0.5rem;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.task-list button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.task-list button:hover {
+  background: #c82333;
+}
